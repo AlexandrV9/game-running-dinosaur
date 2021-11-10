@@ -30,8 +30,17 @@ body {
   position: absolute;
   bottom: -12px;
   left: calc(100% - 40px);
-  animation: cactusMov 1s infinite linear;
-  
+  animation: cactusMov 1s infinite linear backwards;
+}
+
+.settings__text {
+  text-align: center;
+}
+
+.settings__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 @keyframes cactusMov {
@@ -44,9 +53,30 @@ body {
   }
 }
 
-.jump {
+.jump1 {
   animation: jump .5s ease-in-out;
 }
+
+.jump2 {
+  animation: jump 1s ease-in-out;
+}
+
+.jump3 {
+  animation: jump 1.5s ease-in-out;
+}
+
+.jump4 {
+  animation: jump 2s ease-in-out;
+}
+
+.jump5 {
+  animation: jump 2.5s ease-in-out;
+}
+
+.jump6 {
+  animation: jump 3s ease-in-out;
+}
+
 
 @keyframes jump {
   0% {
